@@ -6,42 +6,98 @@
     <title>Archive Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <div class="header-content">
-            <a href="index.html"><img src="images/profile-01.png" alt="Project Archive Logo" class="small_logo"></a>
-            <h1>ARCHIVE HOME</h1>
-        </div>
-        <div class="topnav">
-            <a class="active" href="index.html">Home</a>
-            <a href="archive_home.html">Archive</a>
-            <a href="#news">Network</a>
-        </div> 
-    </header>
+<body class="archive">
 
     <main>
+        <div class="logo-container">
+            <a href="index.html"><img src="images/Archive page Edgelands Title.svg" alt="Project Archive Logo" class="logo"></a>
+        </div>
         <p>This archive is a complete collection of documents produced by the Edgelands Institute and its fellows. The objective of this searchable archive is to preserve and give access to the extensive outcomes, resources and methodology of the Edgelands Institute community. It is also our hope that it will serve as a guide for future projects dealing with similar thematic issues as well as those based on similar pop-up methodology.</p>
-        <p>More specifically, it consists of XXXX documents, in several forms of media:</p>
-        <ul>
-            <li>Texts (articles, reports, books)</li>
-            <li>Artwork (photography, photo documentation of installations, performances, and other media)</li>
-            <li>Videos and podcasts</li>
-            <li>Public events (documentation of roundtable discussions and conferences)</li>
-            <li>Data showcases</li>
-        </ul>
-        <p>Some of the items in this archive are a documentation of events, discussions or art exhibitions. Given their ephemeral nature, just as the ephemeral nature of a pop-up structure like Edgelands, it was important for us to find a way to leave a documented trace – namely with photographs and descriptive texts – of these collaborative moments in time.</p>
+        
         <p>This archive is structured around the pop-up concept and divided into four specific series:</p>
-        <a href="Series1/community-engagement.html" class="btn_1">Community engagement</a>
-        <a href="Series2/local-global.html" class="btn_2">Local and global</a>
-        <a href="Series3/accessibility-inclusivity.html" class="btn_3">Accessibility and inclusivity</a>
-        <a href="Series4/adaptability-responsiveness.html" class="btn_4">Adaptability and responsiveness</a>
-        <p>These series represent four major benefits of the pop-up methodology and are illustrated with the most pertinent Edgelands documents. Each series contains different forms of media, produced in various partner cities, and represents the dialogue between research, art and society in general. The series are subdivided into three sub-series, most often by project type. Given the interdisciplinary and collaborative dynamic of the projects developed by the Edgelands Institute, many of the documents could illustrate several of the thematic series. The decision to classify documents in one series rather than another was guided mainly by thematic pertinence and representativity of form.</p>
+        <div class="boutons-stacked">
+            <a href="Series1/community-engagement.html" class="carte-bouton" id="community-engagement">
+                <div class="carte-corps">
+                    <span class="carte-titre">COMMUNITY ENGAGEMENT</span>
+                </div>
+                <div class="carte-pied">
+                    <span class="carte-action"></span>
+                </div>
+            </a>
+            <a href="Series2/local-global.html" class="carte-bouton" id="local-global">
+                <div class="carte-corps">
+                    <span class="carte-titre">LOCAL AND GLOBAL</span>
+                </div>
+                <div class="carte-pied">
+                    <span class="carte-action"></span>
+                </div>
+            </a>
+            <a href="Series3/accessibility-inclusivity.html" class="carte-bouton" id="access-inclu">
+                <div class="carte-corps">
+                    <span class="carte-titre">ACCESSIBILITY AND INCLUSIVITY</span>
+                </div>
+                <div class="carte-pied">
+                    <span class="carte-action"></span>
+                </div>
+            </a>
+            <a href="Series4/adaptability-responsiveness.html" class="carte-bouton" id="adapt-resp">
+                <div class="carte-corps">
+                    <span class="carte-titre">ADAPTABILITY AND RESPONSIVENESS</span>
+                </div>
+                <div class="carte-pied">
+                    <span class="carte-action"></span>
+                </div>
+            </a>
+        </div>
         <p>This archive can be freely explored by series and are searchable by the following criteria:</p>
-        <a href="Content-lists/authors.html" class="btn_1">Author(s)</a>
-        <a href="Content-lists/year.html" class="btn_2">Date</a>
-        <a href="Content-lists/city.html" class="btn_3">City</a>
-        <a href="Content-lists/media.html" class="btn_4">Media</a>
-        <p>All documents archived here are in the Creative Commons and can be used freely.</p>
+        <div class="boutons-stacked" id="lists">
+            <a href="Content-lists/authors.html" class="carte-bouton">
+                <div class="carte-corps">
+                    <span class="carte-titre">AUTHOR(S)</span>
+                </div>
+                <div class="carte-pied">
+                    <span class="carte-action"></span>
+                </div>
+            </a>
+            <a href="Content-lists/year.html" class="carte-bouton">
+                <div class="carte-corps">
+                    <span class="carte-titre">DATE</span>
+                </div>
+                <div class="carte-pied">
+                    <span class="carte-action"></span>
+                </div>
+            </a>
+            <a href="Content-lists/city.html" class="carte-bouton">
+                <div class="carte-corps">
+                    <span class="carte-titre">CITY</span>
+                </div>
+                <div class="carte-pied">
+                    <span class="carte-action"></span>
+                </div>
+            </a>
+            <a href="Content-lists/media.html" class="carte-bouton">
+                <div class="carte-corps">
+                    <span class="carte-titre">MEDIA TYPE</span>
+                </div>
+                <div class="carte-pied">
+                    <span class="carte-action"></span>
+                </div>
+            </a>
+        </div>
+        <details>
+            <summary>More about the archive</summary>
+            <p>More specifically, it consists of XXXX documents, in several forms of media:</p>
+            <ul>
+                <li>Texts (articles, reports, books)</li>
+                <li>Artwork (photography, photo documentation of installations, performances, and other media)</li>
+                <li>Videos and podcasts</li>
+                <li>Public events (documentation of roundtable discussions and conferences)</li>
+                <li>Data showcases</li>
+            </ul>
+            <p>Some of the items in this archive are a documentation of events, discussions or art exhibitions. Given their ephemeral nature, just as the ephemeral nature of a pop-up structure like Edgelands, it was important for us to find a way to leave a documented trace – namely with photographs and descriptive texts – of these collaborative moments in time.</p>
+            <p>These series represent four major benefits of the pop-up methodology and are illustrated with the most pertinent Edgelands documents. Each series contains different forms of media, produced in various partner cities, and represents the dialogue between research, art and society in general. The series are subdivided into three sub-series, most often by project type. Given the interdisciplinary and collaborative dynamic of the projects developed by the Edgelands Institute, many of the documents could illustrate several of the thematic series. The decision to classify documents in one series rather than another was guided mainly by thematic pertinence and representativity of form.</p>
+        </details>
+
         <!-- <p>All author names in this archive are searchable in the Edgelands Network <a href="">here</a>.</p> -->
         <!-- <h2>Go to the Series :</h2>
         <ol>
@@ -62,7 +118,8 @@
     </div> -->
 
     <footer>
-        <p>This work is licensed under a <a href="https://creativecommons.org/licenses/by-nc/4.0/" rel="license">Creative Commons Attribution 4.0 International License</a>.</p>
+        <p>All documents archived here are in the Creative Commons and can be used freely.</p>
+        <!-- <p>This work is licensed under a <a href="https://creativecommons.org/licenses/by-nc/4.0/" rel="license">Creative Commons Attribution 4.0 International License</a>.</p> -->
     </footer>
 </body>
 </html>
