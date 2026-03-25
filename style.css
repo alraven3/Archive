@@ -1,15 +1,17 @@
 /* Déclaration des polices */
 @font-face {
     font-family: 'title_font';
-    src: url('fonts/Dunbar_Low-Bold.ttf') format('truetype');
-    font-weight: normal;
+    src: url('fonts/Georama-VariableFont_wdthwght.ttf') format('truetype');
+    font-weight: 400;
+    font-stretch: 130%;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'text_font';
     src: url('fonts/Georama-VariableFont_wdthwght.ttf') format('truetype');
-    font-weight: normal;
+    font-weight: 210;
+    font-stretch: 130%;
     font-style: normal;
 }
 
@@ -25,9 +27,40 @@ body {
     color: #333;
     background-color: #F4F1DE;
 }
+.homepage{
+    margin-left: 80px;
+    margin-right: 80px;
+    background: #e1f1ec;
+}
+.institute{
+    background: #e1f1ec;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.archive{
+    margin-left: 80px;
+    margin-right: 500px;
+    background: #e1f1ec;
+    /* margin-right: 500px; */
+}
+.archive-page{
+    margin-left: 80px;
+    margin-right: 500px;
+}
+#local_global{
+    background: #f6eded;
+}
+#community_engagement{
+    background: #f4f4e8;
+}
+#access_inclu{
+    background: #e9f5f9;
+}
+#adapt_resp{
+    background: #f0eff8;
+}
 
 header {
-    background: #00B08B; 
     color: black;
     padding: 1rem;
     text-align: center;
@@ -39,7 +72,6 @@ header {
     gap: 1rem; /* espace entre le logo et le titre */
     padding: 1rem;
     justify-content: center;
-    background: #00B08B;
     color: black;
 }
 
@@ -57,25 +89,61 @@ h2 {
     font-size: 30px;
 }
 
-main {
+#community_engagement h2{
+    color: #d9e021;
+}
+#community_engagement summary{
+    color: #d9e021;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+#local_global h2{
+    color: #ef3f49;
+}
+#local_global summary{
+    color: #ef3f49;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+#access_inclu h2{
+    color: #1781ba;
+}
+#access_inclu summary{
+    color: #1781ba;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+#adapt_resp h2{
+    color: #6a68a9;
+}
+#adapt_resp summary{
+    color: #6a68a9;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+/* main {
     padding: 2rem;
     margin-left: clamp(140px, 10vw, 300px);
     margin-right: clamp(190px, 10vw, 300px);
     max-width: calc(100% - 140px);
     box-sizing: border-box;
-}
+} */
 
 footer {
-    background: #00B08B;
+    margin-top: 50px;
     color: black;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
+}
+.archive footer {
+    color: #00B08B;
 }
 
-footer a {
+/* footer a {
     color: white;
-}
+} */
 
 p {
     margin-bottom: 1.5rem;
@@ -97,7 +165,189 @@ details {
 summary {
     font-family: 'title_font';
     color: #005B52;
-    font-size: 30px;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.bottom-message-home{
+    font-family: 'text_font';
+    color: #005B52;
+    font-size: 13px;
+    text-align: center;
+    font-style: italic;
+    margin-top: 50px;
+}
+
+/* Conteneur pour aligner les 3 boutons horizontalement */
+.boutons-container {
+  display: flex;
+  justify-content: space-between; /* Répartit l'espace équitablement */
+  gap: 20px; /* Espace entre les boutons */
+  flex-wrap: wrap; /* Passe à la ligne sur mobile si besoin */
+  margin-top: 40px;
+}
+.boutons-stacked{
+  display: flex;
+  flex-direction: column; /* empile verticalement */
+  gap: 20px; /* Espace vertical entre chaque bouton */
+  align-items: stretch; /* Force les boutons à prendre toute la largeur disponible */
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* Le lien qui englobe tout (le bouton complet) */
+.homepage .carte-bouton {
+  display: flex;
+  flex-direction: column; /* Empile le corps et le pied verticalement */
+  text-decoration: none; /* Enlève le soulignement du lien */
+  width: 30%; /* Largeur approximative pour 3 boutons (ajustez selon besoin) */
+  border-radius: 8px; /* Arrondi global si souhaité */
+  overflow: hidden; /* Important : garde les coins arrondis propres */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Ombre légère pour le relief */
+}
+.archive .carte-bouton {
+  display: flex;
+  flex-direction: column; /* Empile le corps et le pied verticalement */
+  text-decoration: none; /* Enlève le soulignement du lien */
+  width: 100%; /* Le bouton prend maintenant 100% de la largeur du conteneur */
+  border-radius: 8px; /* Arrondi global si souhaité */
+  overflow: hidden; /* Important : garde les coins arrondis propres */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Ombre légère pour le relief */
+}
+
+/* Effet au survol (optionnel mais recommandé) */
+.carte-bouton:hover {
+  transform: translateY(-3px); /* Remonte légèrement le bouton */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Partie haute : Titre + Background clair */
+.carte-corps {
+  padding: 30px 20px;
+  color: #333;
+  text-align: center;
+  flex-grow: 1; /* Permet aux boutons d'avoir la même hauteur si les titres varient */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content-carte-titre {
+  padding: 10px 20px;
+  text-align: left;
+  display: flex;
+  font-family: 'title_font';
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #333;
+}
+
+.carte-titre {
+  font-size: 1.2rem;
+  font-family: 'title_font'
+}
+
+/* Partie basse : "Learn more" + Background foncé */
+.carte-pied {
+  color: #333;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'title_font'
+}
+.content-carte-excerpt {
+  padding: 10px 20px;
+  text-align: left;
+  font-size: 12px;
+
+  font-family: 'text_font'
+}
+
+.content-carte-excerpt h3{
+    text-transform: uppercase;
+    font-size: 12px;
+    color: white;
+}
+
+.homepage .carte-corps{
+    background-color: #78c9b0;
+}
+.homepage .carte-pied{
+    background-color: #00af8b;
+}
+
+.archive #lists .carte-corps{
+    background-color: #78c9b0;
+}
+.archive #lists .carte-pied{
+    background-color: #00af8b;
+}
+
+#community-engagement .carte-corps{
+    background-color: #e8e88b;
+}
+#community-engagement .carte-pied{
+    background-color: #d9e021;
+}
+#community-engagement .content-carte-titre{
+    background-color: #e8e88b;
+}
+#community-engagement .content-carte-excerpt{
+    background-color: #d9e021; 
+    color: black;
+}
+
+#local-global .carte-corps{
+    background-color: #f3b7bb;
+}
+#local-global .carte-pied{
+    background-color: #ef3f49;
+}
+#local-global .content-carte-titre{
+    background-color: #f3b7bb;
+}
+#local-global .content-carte-excerpt{
+    background-color: #ef3f49;
+    color: white
+}
+#access-inclu .carte-corps{
+    background-color: #99c7e0;
+}
+#access-inclu .carte-pied{
+    background-color: #1781ba;
+}
+#access-inclu .content-carte-titre{
+    background-color: #99c7e0;
+}
+#access-inclu .content-carte-excerpt{
+    background-color: #1781ba;
+    color: white;
+}
+#adapt-resp .carte-corps{
+    background-color: #b4b3d9;
+}
+#adapt-resp .carte-pied{
+    background-color: #6a68a9;
+}
+#adapt-resp .content-carte-titre{
+    background-color: #b4b3d9;
+}
+#adapt-resp .content-carte-excerpt{
+    background-color: #6a68a9;
+    color: white;
+}
+
+/* Responsive : Sur mobile, les boutons passent les uns sous les autres */
+@media (max-width: 768px) {
+  .boutons-container {
+    flex-direction: column;
+  }
+  .carte-bouton {
+    width: 100%;
+  }
 }
 
 .btn {
@@ -110,40 +360,8 @@ summary {
     
     margin-bottom: 1rem;
 }
-.btn_1, .btn_2,.btn_3,.btn_4,.btn_5 {
-    display: inline-block;
-    color: black;
-    padding: 2rem 2rem;
-    text-decoration: none; 
-    border-radius: 4px;
-    margin-bottom: 1rem;
-}
-
-.btn_1{
-    background: #FFC217;
-}
-
-.btn_2{
-    background: #FF3843;
-}
-.btn_3{
-    background: #1481BA;
-}
-
-.btn_4{
-    background: #6C698D;
-}
-
-.btn_5{
-    background: #DBFE87;
-}
-
-
-.btn_1:hover,.btn_2:hover,.btn_3:hover,.btn_4:hover, .btn_5:hover {
-    text-decoration: none; 
-    /* background-color: #FF3843;*/
-    background-color: lightgrey;
-    color: black;
+.btn a:hover{
+    text-decoration: none;
 }
 
 a {
@@ -151,26 +369,26 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+/* a:hover {
     text-decoration: underline;
-}
+} */
 
 .logo-container {
     text-align: center;
     /* margin-bottom: 1.5rem; */
+    margin: 0 auto; /* centering the logo in the middle of the page */
 }
 
 .logo {
-    max-width: 500px; /* Ajustez selon la taille de votre logo */
+    max-width: 100%; /* Ajustez selon la taille de votre logo */
     height: auto;
     border: none;
     display: block;
     margin: 0 auto; /* centering the logo in the middle of the page */
-    margin-bottom: 10px;
 }
 
-.small_logo {
-    max-width: 50px; /* Ajustez selon la taille de votre logo */
+/* .small_logo {
+    max-width: 50px; 
 
 }
 
@@ -200,13 +418,13 @@ a:hover {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
-}
+} */
 
 /* Add a black background color to the top navigation */
 
 
 /* Style the links inside the navigation bar */
-.topnav a {
+/* .topnav a {
   font-family: 'text_font', sans-serif;
   
   color: black;
@@ -214,14 +432,13 @@ a:hover {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 20px;
-}
+} */
 
 /* Change the color of links on hover */
-.topnav a:hover {
-  /* background-color: #FF3843;*/
+/* .topnav a:hover {
   background-color: #73D0B3;
   color: black;
-}
+} */
 
 /* Add a color to the active/current link */
 /* .topnav a.active {
@@ -235,7 +452,6 @@ a:hover {
     /* Crée des colonnes automatiques : minimum 250px de large, sinon elles se répartissent */
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px; /* Espace entre les cartes */
-    max-width: 1200px;
     margin: 0 auto;
 }
 
