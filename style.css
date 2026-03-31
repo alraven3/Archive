@@ -397,8 +397,10 @@ a {
         margin-right: 100px;
     }
     .carte-titre{
-    text-align: center;
-    font-size: 12px;
+        font-size: 12px;
+    }
+    .homepage .carte-titre{
+        text-align: center;
     }
     .homepage .carte-bouton{ /* making the stacked buttons take a larger width at the homepage */
         width: 100%;
