@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversation on Surveillance</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="archive-page" id="community_engagement">
+    <main>
+        <div class="logo-container">
+            <a href="../index.html"><img src="../images/community engagement Edgelands title (yellow).svg" alt="Project Archive Logo" class="logo"></a>
+        </div>
+        <details>
+            <summary>Conversation on Surveillance</summary>
+                <p>The blogposts in these series document a range of events hosted in Cúcuta and Geneva, whose aim was to engage in conversation and to encourage brainstorming on issues dealing with digital technology and developing technology solutions that preserve public trust, local values, needs and independence. Some of the conversations focus on ways to address the reality and experience of digital exclusion by specific population groups, such as migrant women and seniors. All these documents show how local participation in developing new ways of incorporating the digital into our daily lives is crucial for a more inclusive approach new technologies.</p>
+        </details>        
+        <div class="grid-container">
+            <a href="" class="carte-bouton" target="_blank" id="community-engagement">
+                <div>
+                    <span class="content-carte-titre">title</span>
+                </div>
+                <div class="content-carte-excerpt">
+                    <h3>Media Type</h3>
+                    <span class="carte-action">Description</span>
+                </div>
+            </a>
+            <a href="" class="carte-bouton" target="_blank" id="community-engagement">
+                <div>
+                    <span class="content-carte-titre">title</span>
+                </div>
+                <div class="content-carte-excerpt">
+                    <h3>Media Type</h3>
+                    <span class="carte-action">Description</span>
+                </div>
+            </a>
+            <a href="" class="carte-bouton" target="_blank" id="community-engagement">
+                <div>
+                    <span class="content-carte-titre">title</span>
+                </div>
+                <div class="content-carte-excerpt">
+                    <h3>Media Type</h3>
+                    <span class="carte-action">Description</span>
+                </div>
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <p>All documents archived here are in the Creative Commons and can be used freely.</p>
+    </footer>
+</body>
+</html>
