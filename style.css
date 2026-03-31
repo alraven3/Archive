@@ -385,6 +385,9 @@ a {
     .boutons-container{
         flex-direction: column;
     }
+    p{
+        font-size: 13px;
+    }
     .archive{
         margin-left: 60px;
         margin-right: 100px;
@@ -393,7 +396,7 @@ a {
         margin-left: 60px;
         margin-right: 100px;
     }
-    .homepage .carte-titre{
+    .carte-titre{
     text-align: center;
     font-size: 12px;
     }
