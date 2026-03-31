@@ -191,27 +191,22 @@ summary {
 .homepage .carte-bouton {
   display: flex;
   flex-direction: column; /* Empile le corps et le pied verticalement */
-  text-decoration: none; /* Enlève le soulignement du lien */
   width: 30%; /* Largeur approximative pour 3 boutons (ajustez selon besoin) */
-  border-radius: 8px; /* Arrondi global si souhaité */
-  overflow: hidden; /* Important : garde les coins arrondis propres */
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Ombre légère pour le relief */
+  border-radius: 8px; /* round corners */
+  overflow: hidden; /* round corners */
 }
 .archive .carte-bouton {
   display: flex;
   flex-direction: column; /* Empile le corps et le pied verticalement */
   text-decoration: none; /* Enlève le soulignement du lien */
   width: 100%; /* Le bouton prend maintenant 100% de la largeur du conteneur */
-  border-radius: 8px; /* Arrondi global si souhaité */
-  overflow: hidden; /* Important : garde les coins arrondis propres */
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Ombre légère pour le relief */
+  border-radius: 8px; /* round corners */
+  overflow: hidden; /* round corners */
 }
 
-/* Effet au survol (optionnel mais recommandé) */
+
 .carte-bouton:hover {
-  transform: translateY(-3px); /* Remonte légèrement le bouton */
+  transform: translateY(-3px); /* Pushes up the button a little bit upon hovering */
 }
 
 /* Partie haute : Titre + Background clair */
@@ -356,7 +351,7 @@ a {
     display: block;
 }
 
-/* Conteneur de la grille */
+/* Grid container - content grids */
 .grid-container {
     display: grid;
     /* Crée des colonnes automatiques : minimum 250px de large, sinon elles se répartissent */
@@ -366,9 +361,49 @@ a {
 }
 
 /* Responsiveness */
+@media (max-width: 1200px){
+    .archive{
+        margin-left: 60px;
+        margin-right: 200px;
+    }
+    .archive-page{
+        margin-left: 60px;
+        margin-right: 200px;
+    }
+}
 @media (max-width: 768px) {
-  .boutons-container {
-    flex-direction: column;
-  }
 
+  .homepage .carte-titre{
+    text-align: center;
+    font-size: 15px;
+  }
+  .carte-pied{
+    font-size: 12px;
+  }
+}
+@media (max-width: 600px) {
+    .boutons-container{
+        flex-direction: column;
+    }
+    .archive{
+        margin-left: 60px;
+        margin-right: 100px;
+    }
+    .archive-page{
+        margin-left: 60px;
+        margin-right: 100px;
+    }
+    .homepage .carte-titre{
+    text-align: center;
+    font-size: 12px;
+    }
+    .homepage .carte-bouton{ /* making the stacked buttons take a larger width at the homepage */
+        width: 100%;
+    }
+    .carte-pied{
+        font-size: 10px;
+    }
+    .logo{
+        width: 250px;
+    }
 }
