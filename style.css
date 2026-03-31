@@ -247,6 +247,15 @@ summary {
   font-family: 'title_font'
 }
 
+.homepage .carte-titre{
+  font-size: 20px;
+  font-family: 'title_font';
+}
+.homepage .carte-corps{ /* we want the text to be centered only for the homepage */
+  display: flex;
+  justify-content: center;
+}
+
 /* Partie basse : "Learn more" + Background foncé */
 .carte-pied {
   color: #333;
