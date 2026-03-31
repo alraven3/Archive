@@ -409,4 +409,10 @@ a {
     .logo{
         width: 250px;
     }
+    summary{
+        font-size: 15px;
+    }
+    h2, h1{
+        font-size: 20px;
+    }
 }
