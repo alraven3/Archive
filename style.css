@@ -226,11 +226,11 @@ summary {
 .carte-corps {
   padding: 30px 20px;
   color: #333;
-  text-align: center;
+  /* text-align: center; */
   flex-grow: 1; /* Permet aux boutons d'avoir la même hauteur si les titres varient */
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
 }
 .content-carte-titre {
   padding: 10px 20px;
