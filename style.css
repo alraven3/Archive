@@ -388,6 +388,9 @@ a {
     p{
         font-size: 13px;
     }
+    .homepage{
+        margin-left: 60px;
+    }
     .archive{
         margin-left: 60px;
         margin-right: 100px;
