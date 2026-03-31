@@ -1,4 +1,4 @@
-/* Déclaration des polices */
+/* Fonts */
 @font-face {
     font-family: 'title_font';
     src: url('fonts/Georama-VariableFont_wdthwght.ttf') format('truetype');
@@ -125,14 +125,6 @@ h2 {
     text-transform: uppercase;
 }
 
-/* main {
-    padding: 2rem;
-    margin-left: clamp(140px, 10vw, 300px);
-    margin-right: clamp(190px, 10vw, 300px);
-    max-width: calc(100% - 140px);
-    box-sizing: border-box;
-} */
-
 footer {
     margin-top: 50px;
     color: black;
@@ -226,11 +218,12 @@ summary {
 .carte-corps {
   padding: 30px 20px;
   color: #333;
-  /* text-align: center; */
   flex-grow: 1; /* Permet aux boutons d'avoir la même hauteur si les titres varient */
   display: flex;
-  /* align-items: center;
-  justify-content: center; */
+}
+.homepage .carte-corps{ /* we want the text to be centered only for the homepage */
+  display: flex;
+  justify-content: center;
 }
 .content-carte-titre {
   padding: 10px 20px;
@@ -251,10 +244,7 @@ summary {
   font-size: 20px;
   font-family: 'title_font';
 }
-.homepage .carte-corps{ /* we want the text to be centered only for the homepage */
-  display: flex;
-  justify-content: center;
-}
+
 
 /* Partie basse : "Learn more" + Background foncé */
 .carte-pied {
@@ -348,38 +338,10 @@ summary {
     color: white;
 }
 
-/* Responsive : Sur mobile, les boutons passent les uns sous les autres */
-@media (max-width: 768px) {
-  .boutons-container {
-    flex-direction: column;
-  }
-  .carte-bouton {
-    width: 100%;
-  }
-}
-
-.btn {
-    display: inline-block;
-    background: #00B08B;
-    color: black;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    border-radius: 4px;
-    
-    margin-bottom: 1rem;
-}
-.btn a:hover{
-    text-decoration: none;
-}
-
 a {
     color: #2980b9;
     text-decoration: none;
 }
-
-/* a:hover {
-    text-decoration: underline;
-} */
 
 .logo-container {
     text-align: center;
@@ -388,71 +350,11 @@ a {
 }
 
 .logo {
-    max-width: 100%; /* Ajustez selon la taille de votre logo */
+    max-width: 100%; 
     height: auto;
     border: none;
     display: block;
-    margin: 0 auto; /* centering the logo in the middle of the page */
 }
-
-/* .small_logo {
-    max-width: 50px; 
-
-}
-
-.sidenav {
-  width: 130px;
-  position:fixed;
-  z-index: 1;
-  top: 200px;
-  right: 50px;
-  background: #eee;
-  overflow-x: hidden;
-  padding: 8px 0;
-}
-
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #2196F3;
-  display: block;
-}
-
-.sidenav a:hover {
-  color: #064579;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-} */
-
-/* Add a black background color to the top navigation */
-
-
-/* Style the links inside the navigation bar */
-/* .topnav a {
-  font-family: 'text_font', sans-serif;
-  
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 20px;
-} */
-
-/* Change the color of links on hover */
-/* .topnav a:hover {
-  background-color: #73D0B3;
-  color: black;
-} */
-
-/* Add a color to the active/current link */
-/* .topnav a.active {
-  background-color: #FF3843;
-  color: white;
-} */
 
 /* Conteneur de la grille */
 .grid-container {
@@ -463,50 +365,10 @@ a {
     margin: 0 auto;
 }
 
-/* Style de la carte (le lien) */
-.card {
-    background: white;
-    border-radius: 8px;
-    overflow: hidden; /* Pour que l'image respecte les bords arrondis */
-    text-decoration: none; /* Enlève le soulignement du lien */
-    color: inherit;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: transform 0.2s, box-shadow 0.2s;
-    display: flex;
+/* Responsiveness */
+@media (max-width: 768px) {
+  .boutons-container {
     flex-direction: column;
-}
+  }
 
-/* Effet au survol */
-.card:hover {
-    transform: translateY(-5px); /* La carte monte légèrement */
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    text-decoration: none; 
-}
-
-/* Image optionnelle dans la carte */
-.card-image {
-    width: 100%;
-    height: 150px;
-    background-color: #ddd; /* Couleur de fond si pas d'image */
-    object-fit: cover; /* L'image remplit la zone sans être déformée */
-}
-
-/* Contenu texte de la carte */
-.card-content {
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1; /* Pousse le contenu pour occuper l'espace restant */
-}
-
-.card-title {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.card-excerpt {
-    font-size: 0.9rem;
-    color: #666;
-    line-height: 1.4;
 }
