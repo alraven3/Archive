@@ -220,7 +220,6 @@ summary {
 /* Effet au survol (optionnel mais recommandé) */
 .carte-bouton:hover {
   transform: translateY(-3px); /* Remonte légèrement le bouton */
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
 /* Partie haute : Titre + Background clair */
