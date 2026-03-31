@@ -59,6 +59,12 @@ body {
 #adapt_resp{
     background: #f0eff8;
 }
+#roadmaps_{
+    background: #e5ffed;
+}
+#outside-edgelands {
+    background: #fff2e5;
+}
 
 header {
     color: black;
@@ -128,8 +134,23 @@ h2 {
     font-size: 30px;
     text-transform: uppercase;
 }
-/* #roadmaps_{}
-#outside_edgelands{} */
+
+#roadmaps_ h2{
+    color: #3cb44b;
+}
+#roadmaps_ summary{
+    color: #3cb44b;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+#outside_edgelands h2{
+    color: #f58231;
+}
+#outside_edgelands summary{
+    color: #f58231;
+    font-size: 30px;
+    text-transform: uppercase;
+}
 
 footer {
     margin-top: 50px;
