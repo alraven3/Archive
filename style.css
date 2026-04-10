@@ -94,6 +94,9 @@ h2 {
     margin-bottom: 1.8rem;
     font-size: 30px;
 }
+.institute h2{
+    font-size: 20px;
+}
 
 .carte-titre{
     text-transform: uppercase;
