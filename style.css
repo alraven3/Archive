@@ -94,6 +94,7 @@ h2 {
     margin-bottom: 1.8rem;
     font-size: 30px;
 }
+
 .institute h2{
     font-size: 20px;
 }
@@ -105,56 +106,62 @@ h2 {
 
 #community_engagement h2{
     color: #d9e021;
+    text-transform: uppercase;
 }
-#community_engagement summary{
+/* #community_engagement summary{
     color: #d9e021;
     font-size: 30px;
     text-transform: uppercase;
-}
+} */
 
 #local_global h2{
     color: #ef3f49;
+    text-transform: uppercase;
 }
-#local_global summary{
+/* #local_global summary{
     color: #ef3f49;
     font-size: 30px;
     text-transform: uppercase;
-}
+} */
 
 #access_inclu h2{
     color: #1781ba;
+    text-transform: uppercase;
 }
-#access_inclu summary{
+/* #access_inclu summary{
     color: #1781ba;
     font-size: 30px;
     text-transform: uppercase;
-}
+} */
 
 #adapt_resp h2{
     color: #6a68a9;
+    text-transform: uppercase;
 }
-#adapt_resp summary{
+/* #adapt_resp summary{
     color: #6a68a9;
     font-size: 30px;
     text-transform: uppercase;
-}
+} */
 
 #roadmaps_ h2{
     color: #3cb44b;
+    text-transform: uppercase;
 }
-#roadmaps_ summary{
+/* #roadmaps_ summary{
     color: #3cb44b;
     font-size: 30px;
     text-transform: uppercase;
-}
+} */
 #outside_edgelands h2{
     color: #f58231;
+    text-transform: uppercase;
 }
-#outside_edgelands summary{
+/* #outside_edgelands summary{
     color: #f58231;
     font-size: 30px;
     text-transform: uppercase;
-}
+} */
 
 footer {
     margin-top: 50px;
@@ -190,6 +197,10 @@ summary {
     color: #005B52;
     font-size: 1.2rem;
     margin-bottom: 1rem;
+}
+hr{
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .bottom-message-home{
@@ -399,6 +410,10 @@ summary {
 a {
     color: #2980b9;
     text-decoration: none;
+}
+img{ /* making the img dimensions responsive */
+    width: 100%; 
+    height: auto;
 }
 
 .logo-container {
