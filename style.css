@@ -234,7 +234,13 @@ summary {
   border-radius: 8px; /* round corners */
   overflow: hidden; /* round corners */
 }
-
+.archive #lists .carte-bouton{
+    flex: 1; /* the buttons get displayed side by side on the same line rather than stacked on top of each other */
+}
+.archive #lists .carte-corps{ /* centering the text in those specific buttons */
+    justify-content: center;
+    align-items: center;
+}
 
 .carte-bouton:hover {
   transform: translateY(-3px); /* Pushes up the button a little bit upon hovering */
@@ -467,6 +473,9 @@ a {
     }
     .homepage .carte-bouton{ /* making the stacked buttons take a larger width at the homepage */
         width: 100%;
+    }
+    .archive #lists .carte-corps{
+        justify-content: left;
     }
     .carte-pied{
         font-size: 10px;
