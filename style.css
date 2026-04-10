@@ -145,20 +145,20 @@ h2 {
 } */
 
 #roadmaps_ h2{
-    color: #3cb44b;
+    color: #70b744;
     text-transform: uppercase;
 }
 /* #roadmaps_ summary{
-    color: #3cb44b;
+    color: #70b744;
     font-size: 30px;
     text-transform: uppercase;
 } */
 #outside_edgelands h2{
-    color: #f58231;
+    color: #ed8540;
     text-transform: uppercase;
 }
 /* #outside_edgelands summary{
-    color: #f58231;
+    color: #ed8540;
     font-size: 30px;
     text-transform: uppercase;
 } */
@@ -167,9 +167,9 @@ footer {
     margin-top: 50px;
     color: black;
 }
-.archive footer {
+/* .archive footer {
     color: #00B08B;
-}
+} */
 
 /* footer a {
     color: white;
@@ -381,29 +381,29 @@ hr{
     color: white;
 }
 #roadmaps .carte-corps{
-    background-color: #aaffc3;
+    background-color: #bfdea6 ;
 }
 #roadmaps .carte-pied{
-    background-color: #3cb44b;
+    background-color: #70b744;
 }
 #roadmaps .content-carte-titre{
-    background-color: #aaffc3;
+    background-color: #bfdea6 ;
 }
 #roadmaps .content-carte-excerpt{
-    background-color: #3cb44b;
+    background-color: #70b744;
     color: white;
 }
 #outside-edgelands .carte-corps{
-    background-color: #ffd8b1;
+    background-color: #ecc4ae ;
 }
 #outside-edgelands .carte-pied{
-    background-color: #f58231;
+    background-color: #ed8540;
 }
 #outside-edgelands .content-carte-titre{
-    background-color: #ffd8b1;
+    background-color: #ecc4ae ;
 }
 #outside-edgelands .content-carte-excerpt{
-    background-color: #f58231;
+    background-color: #ed8540;
     color: white;
 }
 
