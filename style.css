@@ -441,6 +441,31 @@ hr{
     color: white;
 }
 
+.information{
+    padding: 10px;
+    margin-bottom: 20px;
+    
+    font-size: 15px;
+}
+#community_engagement .information{
+    background-color: #e8e88b;
+}
+#local_global .information{
+    background-color: #f3b7bb;
+}
+#access_inclu .information{
+    background-color: #99c7e0;
+}
+#adapt_resp .information{
+    background-color: #b4b3d9;
+}
+#roadmaps_ .information{
+    background-color: #bfdea6 ;
+}
+#outside_edgelands .information{
+    background-color: #ecc4ae ;
+}
+
 a {
     color: #2980b9;
     text-decoration: none;
