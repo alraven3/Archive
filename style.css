@@ -198,6 +198,13 @@ details {
 details li{
     margin-left: 1rem;
 }
+.archive details a{
+    color: #1781ba;
+    font-weight: bold;
+}
+.archive details a:hover{
+    text-decoration: underline;
+}
 summary {
     font-family: 'title_font';
     color: #005B52;
