@@ -203,6 +203,11 @@ details li{
     color: #1781ba;
     font-weight: bold;
 }
+#institute details a{
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 13px;
+}
 .archive details a:hover{
     text-decoration: underline;
 }
@@ -302,6 +307,10 @@ hr{
     align-items: center;
 }
 
+.institute_ .carte-bouton{
+    width: 30%;
+}
+
 .carte-bouton:hover {
   transform: translateY(-3px); /* Pushes up the button a little bit upon hovering */
 }
@@ -330,6 +339,10 @@ hr{
 .carte-titre {
   font-size: 15px;
   font-family: 'title_font'
+}
+
+#institute .carte-titre{
+    font-size: 13px;
 }
 
 .homepage .carte-titre{
@@ -378,12 +391,27 @@ hr{
     background-color: #00af8b;
 }
 
+#institute .content-carte-titre{
+    background-color: #78c9b0;
+}
+#institute .content-carte-excerpt{
+    background-color: #00af8b;
+}
+
 .archive #lists .carte-corps{
     background-color: #78c9b0;
 }
 .archive #lists .carte-pied{
     background-color: #00af8b;
 }
+
+#community-engagement .carte-bouton, #local-global .carte-bouton, 
+#access-inclu .carte-bouton, #adapt-resp .carte-bouton, 
+#roadmaps .carte-bouton, #outside-edgelands .carte-bouton{
+    border-radius: 8px;
+    overflow: hidden;
+}
+
 
 #community-engagement .carte-corps{
     background-color: #e8e88b;
@@ -519,6 +547,28 @@ img{ /* making the img dimensions responsive */
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px; /* Espace entre les cartes */
     margin: 0 auto;
+}
+
+/* --- CORRECTION SPÉCIFIQUE POUR LES COINS DANS .grid-container --- */
+
+/* 1. Cible les éléments de pied (bas des boutons) dans une grille */
+.grid-container .carte-bouton .carte-pied,
+.grid-container .carte-bouton .content-carte-excerpt {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+/* 2. Cible les éléments de corps (haut des boutons) si nécessaire (pour le haut) */
+.grid-container .carte-bouton .carte-corps,
+.grid-container .carte-bouton .content-carte-titre {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/* 3. Sécurité : s'assurer que le parent coupe bien tout débordement résiduel */
+.grid-container .carte-bouton {
+    overflow: hidden !important;
+    border-radius: 8px !important;
 }
 
 /* Responsiveness */
